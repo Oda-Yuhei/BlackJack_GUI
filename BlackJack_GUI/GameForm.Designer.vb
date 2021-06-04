@@ -45,6 +45,7 @@ Partial Class GameForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.player_total = New System.Windows.Forms.Label()
+        Me.computer_total = New System.Windows.Forms.Label()
         CType(Me.comBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.comBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.comBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,11 +258,22 @@ Partial Class GameForm
         Me.player_total.TabIndex = 22
         Me.player_total.Text = "Total :"
         '
-        'Form1
+        'computer_total
+        '
+        Me.computer_total.AutoSize = True
+        Me.computer_total.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.computer_total.Location = New System.Drawing.Point(201, 13)
+        Me.computer_total.Name = "computer_total"
+        Me.computer_total.Size = New System.Drawing.Size(62, 20)
+        Me.computer_total.TabIndex = 23
+        Me.computer_total.Text = "Total :"
+        '
+        'GameForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(530, 700)
+        Me.Controls.Add(Me.computer_total)
         Me.Controls.Add(Me.player_total)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -285,7 +297,7 @@ Partial Class GameForm
         Me.Controls.Add(Me.comBox3)
         Me.Controls.Add(Me.comBox2)
         Me.Controls.Add(Me.comBox1)
-        Me.Name = "Form1"
+        Me.Name = "GameForm"
         Me.Text = "Form1"
         CType(Me.comBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.comBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -335,4 +347,5 @@ Partial Class GameForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents player_total As Label
+    Friend WithEvents computer_total As Label
 End Class

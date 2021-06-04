@@ -28,11 +28,10 @@
     End Sub
     Private Sub ShowResult()
 
-        MsgBox("コンピューター")
-        MsgBox(computer.ToString)
+        computer.ToString()
+        computer.ResultShowHand()
 
-        MsgBox("あなた")
-        MsgBox(player.ToString)
+        player.ToString()
 
         Dim result As Integer = player.CompareTo(computer)
         If player.IsBurst() OrElse result < 0 Then
@@ -52,10 +51,13 @@
     Public Sub Start()
         While True
             ShowTurn()
-            Dim result = MsgBox("もう一枚引きますか？[y or それ以外]", MsgBoxStyle.YesNo)
+            player.ToString()
+            Dim result = MsgBox("もう一枚引きますか？", MsgBoxStyle.YesNo)
             If result = DialogResult.Yes Then
                 Hit()
+                player.ShowHand()
                 If player.IsBurst() Then
+                    player.ToString()
                     MsgBox("あなたはバーストしました")
                     Exit While
                 End If

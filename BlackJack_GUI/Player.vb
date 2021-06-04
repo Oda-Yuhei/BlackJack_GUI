@@ -16,12 +16,21 @@
         Next
     End Function
 
+    Public Overridable Sub ToString()
+        ' ここリンク
+        ' 要復習
+        ' それとラムダ式
+        Dim result As String = String.Join("", hands.Select(Function(c) c.ToString()))
+        'Return $"[手札={result},合計{GetTotal()}]"
+        GameForm.player_total.Text = $"Total : {GetTotal()}"
+    End Sub
+
 
 
     Public Overridable Sub ShowHand()
         CardsOpen()
+        Dim i As Integer = 1
         For Each card In hands_string
-            Dim i As Integer = 1
             Dim c = My.Resources.Resources.ResourceManager.GetObject(card)
             Dim a = GameForm.Controls("playerBox" & i)
             i += 1
@@ -29,6 +38,7 @@
             b.Image = c
             b.SizeMode = PictureBoxSizeMode.StretchImage
         Next
+        hands_string.Clear()
     End Sub
     Public Function GetTotal() As Integer
         ' ここリンク
