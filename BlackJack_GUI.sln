@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BlackJack_GUI", "BlackJack_GUI\BlackJack_GUI.vbproj", "{AAE15E77-8C6B-4ECF-B85D-CEFFA3F8BA48}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GUI_BlackJack_2nd", "GUI_BlackJack_2nd\GUI_BlackJack_2nd.vbproj", "{A2A29245-3A3E-4F5A-AF55-9EB1522FF4D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AAE15E77-8C6B-4ECF-B85D-CEFFA3F8BA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE15E77-8C6B-4ECF-B85D-CEFFA3F8BA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE15E77-8C6B-4ECF-B85D-CEFFA3F8BA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A29245-3A3E-4F5A-AF55-9EB1522FF4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A29245-3A3E-4F5A-AF55-9EB1522FF4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A29245-3A3E-4F5A-AF55-9EB1522FF4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A29245-3A3E-4F5A-AF55-9EB1522FF4D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
