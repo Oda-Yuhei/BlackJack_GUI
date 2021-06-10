@@ -22,6 +22,7 @@ Partial Class GameForm
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GameForm))
         Me.BetButton = New System.Windows.Forms.Button()
         Me.StandButton = New System.Windows.Forms.Button()
         Me.HitButton = New System.Windows.Forms.Button()
@@ -692,8 +693,9 @@ Partial Class GameForm
         Me.Controls.Add(Me.comPictureBox28)
         Me.Controls.Add(Me.comPictureBox29)
         Me.Controls.Add(Me.comPictureBox210)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "GameForm"
-        Me.Text = "Form1"
+        Me.Text = "GameForm"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.comPictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.comPictureBox12, System.ComponentModel.ISupportInitialize).EndInit()

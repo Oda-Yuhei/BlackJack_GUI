@@ -22,6 +22,7 @@ Partial Class BetForm
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BetForm))
         Me.betcoinTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BetenterButton = New System.Windows.Forms.Button()
@@ -86,6 +87,7 @@ Partial Class BetForm
         Me.Controls.Add(Me.BetenterButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.betcoinTextBox)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "BetForm"
         Me.Text = "BetForm"
         Me.ResumeLayout(False)

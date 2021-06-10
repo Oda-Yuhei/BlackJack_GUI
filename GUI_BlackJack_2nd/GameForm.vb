@@ -159,6 +159,7 @@
             score_boad(i)
         Next
 
+        player.ToString()
         betcoin = StartForm.minimum
         BWriteline($"{StartForm.minimum}CoinをBET")
 

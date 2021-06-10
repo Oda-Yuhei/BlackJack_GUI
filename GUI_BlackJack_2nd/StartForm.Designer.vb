@@ -22,6 +22,7 @@ Partial Class StartForm
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StartForm))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.MyCoinTextBox = New System.Windows.Forms.TextBox()
@@ -109,6 +110,7 @@ Partial Class StartForm
         Me.Controls.Add(Me.MyCoinTextBox)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StartForm"
         Me.Text = "StartForm"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

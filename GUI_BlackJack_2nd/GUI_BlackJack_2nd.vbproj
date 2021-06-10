@@ -323,5 +323,8 @@
   <ItemGroup>
     <None Include="Resources\table.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
